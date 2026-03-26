@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Bouhe-Moustapa/tp3_devops.git'
+                git branch: 'main' , url: 'https://github.com/Bouhe-Moustapa/tp3_devops.git'
             }
         }
         stage('Build') {
